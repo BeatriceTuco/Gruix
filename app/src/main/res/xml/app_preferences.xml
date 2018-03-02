@@ -1,0 +1,38 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Sound and Vibration">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="gruix_sound_enabled"
+            android:summary="Use sound for action"
+            android:title="Use Sound" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="gruix_vibration_enabled"
+            android:summary="Use vibration for action"
+            android:title="Use vibration" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Additional Settings">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="gruix_computer_plays_first"
+            android:summary="Computer first starts move"
+            android:title="Computer plays first" />
+
+        <!--<ListPreference-->
+        <!--android:key="gruix_game_level"-->
+        <!--android:title="Choose level"-->
+        <!--android:summary="Level of game you want to choose"-->
+        <!--android:entries="@array/entries_game_level_list_preference"-->
+        <!--android:entryValues="@array/entries_game_level_list_preference_values"-->
+        <!--android:dialogTitle="Choose level"-->
+        <!--android:defaultValue="0"/>-->
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

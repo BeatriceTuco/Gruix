@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backb"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <tuco.midtermexam.uic.com.gruix.CanvasBoardView xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/canvasBoardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="55dp"
+        custom:computerStoneColor="@string/computer_stone_color"
+        custom:margin="20"
+        custom:maximumInitialStones="8"
+        custom:playerComputer="@string/player_computer"
+        custom:playerUser="@string/player_user"
+        custom:stoneRadius="20"
+        custom:userStoneColor="@string/user_stone_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/undoButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/backd"
+            android:enabled="false"
+            android:text="Undo"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/restartButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/backc"
+            android:text="Restart"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</RelativeLayout>
